@@ -1,6 +1,6 @@
 # 10-lik sonni kiriting
 number = int(input("10-lik sanoq sistemasidagi sonni kiriting: "))
 
-# 10-likdan 2-likka o'tkazish
+# 10-likdan 2-likka o'tkazish   yangilandi
 binary_version = bin(number)[2:]  # [2:] - '0b' old qismini olib tashlash
 print(f"10-likdan 2-likka: {binary_version}")
