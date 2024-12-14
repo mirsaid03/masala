@@ -6,9 +6,9 @@ def convert_number(num, to_base):
     elif to_base == 16:
         return hex(num)[2:]  # 16-lik
     else:
-        return str(num)  # Agar boshqa tizimga o'tkazish talab qilinmasa
+        return str(num)  # Agar boshqa tizimga o'tkazish talab qilinmasa  sdfjklgsfhjkwesrtfygu
 
-# Misol:
+# Misol: yangilandi
 decimal_num = 10
 print("10-likdan 2-likka:", convert_number(decimal_num, 2))
 print("10-likdan 8-likka:", convert_number(decimal_num, 8))
