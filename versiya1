@@ -1,6 +1,15 @@
-# 10-lik sonni kiriting
-number = int(input("10-lik sanoq sistemasidagi sonni kiriting: "))
+def convert_number(num, to_base):
+    if to_base == 2:
+        return bin(num)[2:]  # 2-lik
+    elif to_base == 8:
+        return oct(num)[2:]  # 8-lik
+    elif to_base == 16:
+        return hex(num)[2:]  # 16-lik
+    else:
+        return str(num)  # Agar boshqa tizimga o'tkazish talab qilinmasa
 
-# 10-likdan 2-likka o'tkazish   yangilandi
-binary_version = bin(number)[2:]  # [2:] - '0b' old qismini olib tashlash
-print(f"10-likdan 2-likka: {binary_version}")
+# Misol:
+decimal_num = 10
+print("10-likdan 2-likka:", convert_number(decimal_num, 2))
+print("10-likdan 8-likka:", convert_number(decimal_num, 8))
+print("10-likdan 16-likka:", convert_number(decimal_num, 16))
